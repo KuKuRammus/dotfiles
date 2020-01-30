@@ -19,3 +19,11 @@ if [ ! -d "$1/nvim" ]; then
 else
     echo '[SKIP] nvim'
 fi
+
+# i3
+if [ ! -d "$1/i3" ]; then
+    echo '[LINK] i3';
+    ln -s "$(pwd)/i3" "$1/i3"
+else
+    echo '[SKIP] i3'
+fi
