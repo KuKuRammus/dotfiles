@@ -27,3 +27,11 @@ if [ ! -d "$1/i3" ]; then
 else
     echo '[SKIP] i3'
 fi
+
+# termite
+if [ ! -d "$1/termite" ]; then
+    echo '[LINK] termite';
+    ln -s "$(pwd)/termite" "$1/termite"
+else
+    echo '[SKIP] termite'
+fi
