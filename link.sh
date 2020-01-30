@@ -43,3 +43,11 @@ if [ ! -d "$1/gtk-3.0" ]; then
 else
     echo '[SKIP] gtk-3.0'
 fi
+
+# compton
+if [ ! -d "$1/compton" ]; then
+    echo '[LINK] compton';
+    ln -s "$(pwd)/compton" "$1/compton"
+else
+    echo '[SKIP] compton'
+fi
