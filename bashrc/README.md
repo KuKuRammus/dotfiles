@@ -1,0 +1,1 @@
+# Base .bashrc file

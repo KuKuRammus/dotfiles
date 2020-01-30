@@ -59,3 +59,11 @@ if [ ! -d "$1/rofi" ]; then
 else
     echo '[SKIP] rofi'
 fi
+
+# bashrc
+if [ ! -d "$1/bashrc" ]; then
+    echo '[LINK] bashrc';
+    ln -s "$(pwd)/bashrc" "$1/bashrc"
+else
+    echo '[SKIP] bashrc'
+fi
