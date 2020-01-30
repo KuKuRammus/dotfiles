@@ -51,3 +51,11 @@ if [ ! -d "$1/compton" ]; then
 else
     echo '[SKIP] compton'
 fi
+
+# rofi
+if [ ! -d "$1/rofi" ]; then
+    echo '[LINK] rofi';
+    ln -s "$(pwd)/rofi" "$1/rofi"
+else
+    echo '[SKIP] rofi'
+fi
