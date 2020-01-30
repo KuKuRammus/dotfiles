@@ -35,3 +35,11 @@ if [ ! -d "$1/termite" ]; then
 else
     echo '[SKIP] termite'
 fi
+
+# GTK
+if [ ! -d "$1/gtk-3.0" ]; then
+    echo '[LINK] GTK';
+    ln -s "$(pwd)/gtk-3.0" "$1/gtk-3.0"
+else
+    echo '[SKIP] gtk-3.0'
+fi
