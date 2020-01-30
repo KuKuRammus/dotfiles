@@ -13,5 +13,9 @@ if [ ! -d "$1" ]; then
 fi
 
 # nvim
-echo '[LINK] nvim';
-ln -s "$(pwd)/nvim" "$1/nvim"
+if [ ! -d "$1/nvim" ]; then
+    echo '[LINK] nvim';
+    ln -s "$(pwd)/nvim" "$1/nvim"
+else
+    echo '[SKIP] nvim'
+fi
