@@ -1,3 +1,1 @@
-cd cpu_usage2
-make
-cd ..
+cd cpu_usage2 && make && cd ..

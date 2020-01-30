@@ -25,7 +25,5 @@ DECIMALS=2
 [separator]
 
 [time]
-command=date '+%Y-%m-%d %H:%M:%S'
+command=date '+%Y-%m-%d %H:%M:%S '
 interval=5
-
-[separator]
