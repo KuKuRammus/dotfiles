@@ -28,6 +28,14 @@ else
     echo '[SKIP] i3'
 fi
 
+# i3blocks
+if [ ! -d "$1/i3blocks" ]; then
+    echo '[LINK] i3blocks';
+    ln -s "$(pwd)/i3blocks" "$1/i3blocks"
+else
+    echo '[SKIP] i3blocks'
+fi
+
 # termite
 if [ ! -d "$1/termite" ]; then
     echo '[LINK] termite';
