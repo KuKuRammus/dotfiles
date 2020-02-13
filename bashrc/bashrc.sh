@@ -5,6 +5,9 @@
 alias vim="nvim"
 alias vi="nvim"
 
+## Attach to minikube docker server
+alias docker-attach-minikube="eval $(minikube docker-env)"
+
 # Pretty git log
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr) %C(bold blue)<%an>%C(yellow)%d%Creset' --abbrev-commit"
 ###########################################################
