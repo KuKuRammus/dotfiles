@@ -19,7 +19,6 @@ Plug 'itchyny/lightline.vim'
 call plug#end()
 
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ Theming
 colorscheme tender
@@ -50,3 +49,8 @@ set expandtab
 
 " Enable line identation highlight
 let g:indentLine_enabled=1
+
+" Display whitespace characters
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:.
+set list
+
