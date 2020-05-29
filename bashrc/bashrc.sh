@@ -18,6 +18,9 @@ alias glog="git log --graph --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr) %C
 
 ## Scan local .bin direcory for executables
 export PATH="$HOME/.bin:$PATH"
+
+## Export user id (used for docker compose)
+export UID
 ###########################################################
 
 
