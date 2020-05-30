@@ -15,9 +15,11 @@ Plug 'editorconfig/editorconfig-vim'
 " lightline
 Plug 'itchyny/lightline.vim'
 
+" Autocomplete
+Plug 'ajh17/vimcompletesme'
+
 " End plugin list
 call plug#end()
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ Theming
