@@ -16,6 +16,9 @@ alias glog="git log --graph --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr) %C
 ###########################################################
 # Exports
 
+## Fuzzy finder command
+export FZF_DEFAULT_COMMAND="fd --type f --hidden --follow --exclude .git --exclude vendor --exclude node_modules --exclude .vim"
+
 ## Scan local .bin direcory for executables
 export PATH="$HOME/.bin:$PATH"
 

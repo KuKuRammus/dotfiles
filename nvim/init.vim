@@ -6,6 +6,9 @@ call plug#begin('~/.config/nvim/plugged')
 " Tender theme
 Plug 'jacoborus/tender.vim'
 
+" fzf ( https://github.com/junegunn/fzf.vim )
+Plug 'junegunn/fzf.vim'
+
 " identLine ( https://github.com/Yggdroot/indentLine )
 Plug 'Yggdroot/indentLine'
 
@@ -25,6 +28,7 @@ call plug#end()
 """ Theming
 colorscheme tender
 hi Visual term=reverse cterm=reverse guibg=Grey
+highlight LineNr ctermfg=grey
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ Custom settings
@@ -51,6 +55,9 @@ set expandtab
 
 " Enable line identation highlight
 let g:indentLine_enabled=1
+
+" Bind file fuzzy finder
+map <C-p> :Files<CR>
 
 " Display whitespace characters
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:.
