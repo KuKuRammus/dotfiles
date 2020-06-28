@@ -68,6 +68,14 @@ else
     echo '[SKIP] rofi'
 fi
 
+# dunst
+if [ ! -d "$1/dunst" ]; then
+    echo '[LINK] dunst';
+    ln -s "$(pwd)/dunst" "$1/dunst"
+else
+    echo '[SKIP] dunst'
+fi
+
 # bashrc
 if [ ! -d "$1/bashrc" ]; then
     echo '[LINK] bashrc';
