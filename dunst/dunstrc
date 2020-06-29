@@ -253,7 +253,7 @@ format = "<b>Discord: </b>%s\n%b"
 
 [Spotify]
 appname = Spotify
-format = "<b>Now Playing: </b>%b"
+format = "<b>Now Playing:</b>\n%s\n<i>%b</i>"
 timeout = 4
 
 # Every section that isn't one of the above is interpreted as a rules to
