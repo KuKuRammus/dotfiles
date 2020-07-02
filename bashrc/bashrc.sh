@@ -31,7 +31,7 @@ export UID
 # zsh config
 
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="tjkirch"
+ZSH_THEME="lambda"
 plugins=(
     git
 )

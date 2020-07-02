@@ -6,6 +6,9 @@ call plug#begin('~/.config/nvim/plugged')
 " Tender theme
 Plug 'jacoborus/tender.vim'
 
+" Gruvbox
+Plug 'morhetz/gruvbox'
+
 " fzf ( https://github.com/junegunn/fzf.vim )
 Plug 'junegunn/fzf.vim'
 
@@ -26,8 +29,10 @@ call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ Theming
-colorscheme tender
-hi Visual term=reverse cterm=reverse guibg=Grey
+
+let g:gruvbox_italic=1
+let g:gruvbox_contrast_dark='soft'
+colorscheme gruvbox
 highlight LineNr ctermfg=grey
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
