@@ -1,6 +1,6 @@
 [options]
 font = JetBrains Mono 11
-
+cell_height_scale=1.25
 
 [colors]
 foreground      = #fbf1c7
