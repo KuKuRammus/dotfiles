@@ -24,6 +24,10 @@ export PATH="$HOME/.bin:$PATH"
 
 ## Export user id (used for docker compose)
 export UID
+
+## Export GOPATH
+export GOPATH=~/go
+
 ###########################################################
 
 

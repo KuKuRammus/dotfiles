@@ -126,8 +126,8 @@ bar {
 # i3gaps border removal
 hide_edge_borders both
 for_window [class="^.*"] border pixel 0
-gaps inner 7
-gaps outer 4
+gaps inner 4
+gaps outer 1
 
 # Run compton
 exec_always compton --config ~/.config/compton/compton.conf
@@ -136,5 +136,5 @@ exec_always compton --config ~/.config/compton/compton.conf
 exec "setxkbmap -option 'grp:alt_shift_toggle' -layout us,ru"
 
 # Set wallpaper 
-exec feh --bg-scale ~/Images/wallpaper.jpg
+exec feh --bg-scale --no-xinerama ~/Images/wallpaper.jpg
 
