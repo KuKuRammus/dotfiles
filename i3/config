@@ -123,6 +123,11 @@ bar {
     }
 }
 
+# Reassign monitor
+workspace 1 output DP-0
+workspace 2 output HDMI-2
+workspace 3 output HDMI-0
+
 # i3gaps border removal
 hide_edge_borders both
 for_window [class="^.*"] border pixel 0
@@ -137,4 +142,5 @@ exec "setxkbmap -option 'grp:alt_shift_toggle' -layout us,ru"
 
 # Set wallpaper 
 exec feh --bg-scale --no-xinerama ~/Images/wallpaper.jpg
+
 
