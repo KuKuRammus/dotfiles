@@ -41,6 +41,9 @@ bindsym $mod+f fullscreen toggle
 # Toggle tiling/floating
 bindsym $mod+Shift+space floating toggle
 
+# Lock activation
+bindsym $mod+Shift+L exec i3lock --color=#000000
+
 # Define colors
 set $color-bg-dark      #282828
 set $color-bg-normal    #3c3836
@@ -125,8 +128,8 @@ bar {
 
 # Reassign monitor
 workspace 1 output DP-0
-workspace 2 output HDMI-2
-workspace 3 output HDMI-0
+workspace 2 output HDMI-1
+workspace 3 output HDMI-2
 
 # i3gaps border removal
 hide_edge_borders both
